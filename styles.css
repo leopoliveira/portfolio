@@ -1,19 +1,16 @@
 html {
-  margin: 0 auto;
-  padding: 0 10px;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   font-size: 16px;
   line-height: 1.5;
-  color: #333333;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  width: 80%; /* Set the desired width */
   min-height: 100vh;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
 ul {
@@ -29,7 +26,7 @@ a {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 20px 0;
 }
@@ -37,6 +34,8 @@ h2 {
 /* Header */
 header {
   width: 100%;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  border-radius: 20px;
 }
 
 .navbar ul {
@@ -49,6 +48,22 @@ header {
 
 .navbar ul li:hover {
   cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Eu */
+
+#eu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-size: 30px;
+}
+
+#eu h2 {
+  margin: 0;
 }
 
 /* Saudação */
@@ -58,12 +73,11 @@ header {
   font-weight: 700;
   margin-bottom: 10px;
   width: 100%;
-  text-align: center;
 }
 
 /* Sobre */
 
-#sobre p{
+#sobre p {
   text-align: justify;
 }
 
@@ -126,5 +140,6 @@ header {
 
 footer p {
   margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
 }
