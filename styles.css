@@ -42,12 +42,6 @@ header {
   overflow: hidden;
 }
 
-@media (max-width: 700px) {
-  header {
-    position: absolute;
-  }
-}
-
 .navbar ul {
   display: flex;
   justify-content: space-evenly;
@@ -64,7 +58,11 @@ header {
 
 @media (max-width: 700px) {
   .navbar ul {
-    display: flex;
+    display: none;
+  }
+
+  .active {
+    display: flex !important;
     justify-content: start;
     align-items: center;
     flex-direction: column;
@@ -74,6 +72,27 @@ header {
   .navbar ul li {
     cursor: pointer;
     padding: 5px;
+  }
+}
+
+.hamburguer {
+  display: none;
+}
+
+.hamburguer span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .hamburguer {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
   }
 }
 

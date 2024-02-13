@@ -29,6 +29,28 @@ function atualizaIdade() {
   idadeSpan.textContent = dataAtual - dataNascimento;
 }
 
+function hamburguerMenu() {
+  const menu = document.querySelector(".navbar ul");
+  const hamburguerMenu = document.querySelector(".hamburguer");
+
+  hamburguerMenu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+}
+
+function hideHambuguerMenu() {
+  const menuItems = document.querySelectorAll(".navbar ul li");
+  const hamburguerMenu = document.querySelector(".hamburguer");
+
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        hamburguerMenu.click();
+    });
+  });
+}
+
 atualizaAnoRodape();
 atualizaSaudacao();
 atualizaIdade();
+hamburguerMenu();
+hideHambuguerMenu();
