@@ -1,6 +1,6 @@
 html {
   font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
+  background-color: #f4f1f1;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -33,9 +33,19 @@ h2 {
 
 /* Header */
 header {
-  width: 100%;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-  border-radius: 20px;
+  width: 80%;
+  background-color: #e8e6e6;
+  box-shadow: 2px 2px 4px #9d9c9c, -2px -1px 4px #dbdbdb;
+  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  header {
+    position: absolute;
+  }
 }
 
 .navbar ul {
@@ -44,7 +54,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .navbar ul li:hover {
